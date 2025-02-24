@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import NavBar from './components/Navbar'
 import Banner from './components/Banner'
+import Skills from './components/Skills'
+import Project from './components/Project'
 import 'bootstrap/dist/css/bootstrap.min.css' 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -13,11 +15,9 @@ function App() {
 
       <BrowserRouter>
         <NavBar />
-        <Routes>
-          <Route path="/" element={<Banner/>} />
-          <Route path="/Skills" element={<Banner/>} />
-          <Route path="/projects" element={<Banner/>} />
-      </Routes>
+        <Banner />
+        <Skills />
+        <Project/>
     </BrowserRouter>
     </>
   )
